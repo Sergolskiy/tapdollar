@@ -3,20 +3,15 @@ extends _layout
 block vars
 	- var pageTitle = "Home page";
 	- var pageClass = "";
+	- var pageActive = "homepage";
 
 block content
+	//.webp-img(data-webp="./img/Rectangle5.webp" data-img="./img/Rectangle5.jpg")
+
+		<picture>
+			<source srcset="./img/awesomeWebPImage.webp" type="image/webp">
+			<source srcset="./img/creakyOldJPEG.jpg" type="image/jpeg">
+			<img src="./img/creakyOldJPEG.jpg" alt="Alt Text!">
+		</picture>
 
 	div.main-wrap
-		div.prevpage(style="height: 65vh; display: flex; justify-content: center; align-items: center; flex-direction: column; line-height: 33px; font-size: 20px;")
-			a(href="./index1.html" target="_blank") Home
-			a(href="./404.html" target="_blank") 404
-			a(href="./blog.html" target="_blank") blog
-			a(href="./blog-item.html" target="_blank") blog item
-			a(href="./pricing.html" target="_blank") pricing
-			a(href="./seo.html" target="_blank") seo
-			a(href="./contact.html" target="_blank") contact
-			a(href="./about.html" target="_blank") about
-			a(href="./how-it-work.html" target="_blank") how-it-work
-
-
-
