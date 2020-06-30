@@ -1,8 +1,11 @@
 header.header
-  .header__inner
+  .header__inner.site-container
     .header__logo
       a(href="#")
-        img(src="" alt="img")
+        picture
+          source(srcset="./img/td-logo.webp" type="image/webp")
+          source(srcset="./img/td-logo.png" type="image/png")
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="140" height="40" alt="img")
     .header__menu
       .header__menu-item
         a(href="#").header__menu-link About project

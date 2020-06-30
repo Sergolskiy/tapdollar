@@ -33,6 +33,15 @@ if (UAString.indexOf("Trident") !== -1 && UAString.indexOf("rv:10") !== -1)
 
 
 $(document).ready(function () {
+  $('.quest__btn').click(function (e) {
+
+    if($(this).closest('.quest__item.active').length > 0){
+      $(this).closest('.quest__item').removeClass('active');
+    } else{
+      $('.quest__item').removeClass('active');
+      $(this).closest('.quest__item').addClass('active');
+    }
+  });
 
 
 });

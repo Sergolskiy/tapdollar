@@ -1,5 +1,10 @@
 footer.footer
-  .footer__inner
+  .footer__bg
+    picture
+      source(srcset="./img/footer-bg.webp" type="image/webp")
+      source(srcset="./img/footer-bg.png" type="image/png")
+      img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="100%" height="560" alt="img")
+  .footer__inner.site-container
     .footer__top
       .footer__column
         .footer__logo
@@ -13,33 +18,34 @@ footer.footer
           adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.
       .footer__column
-        .footer__list
-          a(href="javascript:void(0);").footer__list-title Links
-          a(href="#").footer__link Home
-          a(href="#").footer__link About project
-          a(href="#").footer__link Philosophy
-          a(href="#").footer__link Opportunities
-          a(href="#").footer__link News
-          a(href="#").footer__link Profit calculator
-        .footer__list
-          a(href="javascript:void(0);").footer__list-title Support
-          a(href="#").footer__link Contact Us
-          a(href="#").footer__link FAQ
-          a(href="#").footer__link.footer__link-ico
-            picture
-              source(srcset="./img/ico/app-store.webp" type="image/webp")
-              source(srcset="./img/ico/app-store.png" type="image/png")
-              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" height="55" width="162" alt="img")
+        .footer__lists
+          .footer__list
+            a(href="javascript:void(0);").footer__list-title Links
+            a(href="#").footer__link Home
+            a(href="#").footer__link About project
+            a(href="#").footer__link Philosophy
+            a(href="#").footer__link Opportunities
+            a(href="#").footer__link News
+            a(href="#").footer__link Profit calculator
+          .footer__list
+            a(href="javascript:void(0);").footer__list-title Support
+            a(href="#").footer__link Contact Us
+            a(href="#").footer__link FAQ
+            a(href="#").footer__link.footer__link-ico
+              picture
+                source(srcset="./img/ico/app-store.webp" type="image/webp")
+                source(srcset="./img/ico/app-store.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" height="55" width="162" alt="img")
 
-        .footer__list
-          a(href="javascript:void(0);").footer__list-title Contact
-          a(href="mailto:info@tapdollar.cash").footer__link info@tapdollar.cash
-          a(href="tel:+4777777777").footer__link +47 777 77 777
-          a(href="#").footer__link.footer__link-ico
-            picture
-              source(srcset="./img/ico/google-play.webp" type="image/webp")
-              source(srcset="./img/ico/google-play.png" type="image/png")
-              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" height="55" width="161" alt="img")
+          .footer__list
+            a(href="javascript:void(0);").footer__list-title Contact
+            a(href="mailto:info@tapdollar.cash").footer__link info@tapdollar.cash
+            a(href="tel:+4777777777").footer__link +47 777 77 777
+            a(href="#").footer__link.footer__link-ico
+              picture
+                source(srcset="./img/ico/google-play.webp" type="image/webp")
+                source(srcset="./img/ico/google-play.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" height="55" width="161" alt="img")
 
     .footer__bottom
       .footer__copy.
