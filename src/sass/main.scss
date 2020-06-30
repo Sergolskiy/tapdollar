@@ -7,7 +7,8 @@ $blacklight: #656073;
 
 * {
   box-sizing: border-box;
-  font-family: 'Muli';
+  font-family: "Muli";
+  font-weight: 400;
 }
 
 .main-wrap{
@@ -95,4 +96,48 @@ input{
   border-color: #ee789a !important;
 }
 
+.site-btn{
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: 43px;
+  border: 2px solid #edc913;
+  background-color: #edc913;
+  transition: .3s all;
+  color: white;
+  text-transform: uppercase;
+  min-width: 140px;
+  font-size: 15px;
+  font-weight: 700;
+  width: fit-content;
 
+  &:hover{
+    color: #edc913;
+    background-color: transparent;
+  }
+
+  &--reverse{
+    color: #edc913;
+    background-color: transparent;
+  }
+}
+
+.site-name{
+  color: #edc913;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.site-title{
+  font-weight: 700;
+  color: #007b5b;
+  font-size: 36px;
+  text-align: center;
+
+  &--white{
+    color: white;
+  }
+}
