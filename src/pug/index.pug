@@ -1,118 +1,116 @@
 extends _layout
 
 block vars
-	- var pageTitle = "Home page";
-	- var pageClass = "";
-	- var pageActive = "homepage";
+  - var pageTitle = "Home page";
+  - var pageClass = "";
+  - var pageActive = "homepage";
 
 block content
-	//.webp-img(data-webp="./img/Rectangle5.webp" data-img="./img/Rectangle5.jpg")
+  //.webp-img(data-webp="./img/Rectangle5.webp" data-img="./img/Rectangle5.jpg")
 
-		<picture>
-			<source srcset="./img/awesomeWebPImage.webp" type="image/webp">
-			<source srcset="./img/creakyOldJPEG.jpg" type="image/jpeg">
-			<img src="./img/creakyOldJPEG.jpg" alt="Alt Text!">
-		</picture>
+    <picture>
+      <source srcset="./img/awesomeWebPImage.webp" type="image/webp">
+      <source srcset="./img/creakyOldJPEG.jpg" type="image/jpeg">
+      <img src="./img/creakyOldJPEG.jpg" alt="Alt Text!">
+    </picture>
 
-	div.main-wrap
-		.top-block
-			.top-block__inner.site-container
-				.top-block__left
-					h1.top-block__title The Future <br> of Financing Technology is Here.
-					.top-block__items
-						.top-block__item
-							.top-block__icon
-							.top-block__txt
-								.top-block__price $ 345K
-								.top-block__caption TOTAL INVESTMENTS
-						.top-block__item
-							.top-block__icon
-							.top-block__txt
-								.top-block__price $ 1.7M
-								.top-block__caption TOTAL BONUS
-						.top-block__item
-							.top-block__icon
-							.top-block__txt
-								.top-block__price 1.8K
-								.top-block__caption 24H NEW MEMBERS
-						.top-block__item
-							.top-block__icon
-							.top-block__txt
-								.top-block__price $ 2.4M
-								.top-block__caption TOTAL PROFIT
-						.top-block__item
-							.top-block__icon
-							.top-block__txt
-								.top-block__price 19K
-								.top-block__caption TOTAL MEMBERS
-				.top-block__right
-					.top-block__img
-						img(src="" alt="img")
+  div.main-wrap
+    .top-block
+      .top-block__inner.site-container
+        .top-block__left
+          h1.top-block__title The Future <br> of Financing Technology is Here.
+          .top-block__items
+            .top-block__item
+              .top-block__icon
+              .top-block__txt
+                .top-block__price $ 345K
+                .top-block__caption TOTAL INVESTMENTS
+            .top-block__item
+              .top-block__icon
+              .top-block__txt
+                .top-block__price $ 1.7M
+                .top-block__caption TOTAL BONUS
+            .top-block__item
+              .top-block__icon
+              .top-block__txt
+                .top-block__price 1.8K
+                .top-block__caption 24H NEW MEMBERS
+            .top-block__item
+              .top-block__icon
+              .top-block__txt
+                .top-block__price $ 2.4M
+                .top-block__caption TOTAL PROFIT
+            .top-block__item
+              .top-block__icon
+              .top-block__txt
+                .top-block__price 19K
+                .top-block__caption TOTAL MEMBERS
+        .top-block__right
+          .top-block__img
+            img(src="" alt="img")
 
-				.top-block__bottom
-					.top-block__btn.site-btn START NOW
+        .top-block__bottom
+          .top-block__btn.site-btn START NOW
 
-		.hiw
-			.hiw__inner
-				.hiw__name.site-name
-				.hiw__title.site-title
-				.hiw__img
-				.hiw__items
-					.hiw__item
-						.hiw__num 1
-						.hiw__txt Register
-					.hiw__item
-						.hiw__num 2
-						.hiw__txt Top up your  wallet
-					.hiw__item
-						.hiw__num 3
-						.hiw__txt Choose investment type
-					.hiw__item
-						.hiw__num 4
-						.hiw__txt Withdraw your  investment with % after 24 hours
-					.hiw__item
-						.hiw__num 5
-						.hiw__txt Invest again
+    .hiw
+      .hiw__inner
+        .hiw__name.site-name
+        .hiw__title.site-title
+        .hiw__img
+        .hiw__items
+          .hiw__item
+            .hiw__num 1
+            .hiw__txt Register
+          .hiw__item
+            .hiw__num 2
+            .hiw__txt Top up your  wallet
+          .hiw__item
+            .hiw__num 3
+            .hiw__txt Choose investment type
+          .hiw__item
+            .hiw__num 4
+            .hiw__txt Withdraw your  investment with % after 24 hours
+          .hiw__item
+            .hiw__num 5
+            .hiw__txt Invest again
 
-				.hiw__bottom
-					.hiw__btn.site-btn START NOW
-
-
-
-		.project
-			.project__title
-			.project__main
-			.project__bottom
-				.project__btn.site-btn START NOW
+        .hiw__bottom
+          .hiw__btn.site-btn START NOW
 
 
-		.calculator
-			.calculator__inner
-				.calculator__title
-				.calculator__block
-					.calculator__left
-						.calculator__top
-							.calculator__top-txt Calculated for
-								span 1 USD BILLEX = 1 USA DOLLAR
-						.calculator__fields
-							.calculator__row
-								label(for="sel").calculator__label
-								select.calculator__select#sel
-									option Automatic
-									option Custom
-							.calculator__row
-								label(for="inp1").calculator__label
-								input(type="text" id="inp1" value="1000").calculator__input
-							.calculator__row
-								label(for="sel2").calculator__label
-								select.calculator__select#sel2
-									option Level 1
-									option Level 2
 
-					.calculator__right
-						.calculator__
+    .project
+      .project__title
+      .project__main
+      .project__bottom
+        .project__btn.site-btn START NOW
 
 
+    .calculator
+      .calculator__inner
+        .calculator__title
+        .calculator__block
+          .calculator__left
+            .calculator__top
+              .calculator__top-txt Calculated for
+                span 1 USD BILLEX = 1 USA DOLLAR
+            .calculator__fields
+              .calculator__row
+                label(for="sel").calculator__label
+                select.calculator__select#sel
+                  option Automatic
+                  option Custom
+              .calculator__row
+                label(for="inp1").calculator__label
+                input(type="text" id="inp1" value="1000").calculator__input
+              .calculator__row
+                label(for="sel2").calculator__label
+                select.calculator__select#sel2
+                  option Level 1
+                  option Level 2
+
+          .calculator__right
+            .calculator__
 
 
 
@@ -124,9 +122,95 @@ block content
 
 
 
-		//commentariy
-		.quest
-			.quest__inner
-				.quest__name.site-name
-				.quest__title.site-title
+
+
+    //commentariy
+
+
+
+    .present
+      .present__inner.site-container
+        .present__title.site-title.site-title--white Questions you often ask
+        .present__table
+          .present__table-head
+            .present__table-head-bg
+            .present__table-row
+              .present__table-column Level
+              .present__table-column Time to profit
+              .present__table-column Partners
+              .present__table-column Partners investments
+              .present__table-column Bonus
+          .present__table-body
+            .present__table-body-bg
+              .present__table-row
+                .present__table-column 1
+                .present__table-column 24 Hours
+                .present__table-column 30
+                .present__table-column 10 000 USD
+                .present__table-column 150 USD
+              .present__table-row
+                .present__table-column 2
+                .present__table-column 12 Hours
+                .present__table-column 75
+                .present__table-column 50 000 USD
+                .present__table-column 750 USD
+              .present__table-row
+                .present__table-column 3
+                .present__table-column 6 Hours
+                .present__table-column 150
+                .present__table-column 125 000 USD
+                .present__table-column 1500 USD
+        .present__btn
+          .present__btn-i
+            picture
+              source(srcset="./img/ico/pdf-ico.webp" type="image/webp")
+              source(srcset="./img/ico/pdf-ico.png" type="image/png")
+              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img")
+            span DOWNLOAD <br> PRESENTATION
+
+
+    .quest
+      .quest__inner.site-container
+        .quest__name.site-name FAQ
+        .quest__title.site-title Questions you often ask
+        .quest__content
+          .quest__item
+            .quest__btn
+              picture
+                source(srcset="./img/ico/arrow-ico.webp" type="image/webp")
+                source(srcset="./img/ico/arrow-ico.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img")
+            .quest__quest-text How to Identify a Bitcoin or Ethereum Cloud Mining Scam?
+            .quest__response-text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          .quest__item
+            .quest__btn
+              picture
+                source(srcset="./img/ico/arrow-ico.webp" type="image/webp")
+                source(srcset="./img/ico/arrow-ico.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img")
+            .quest__quest-text What is a Merkle Tree?
+            .quest__response-text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          .quest__item
+            .quest__btn
+              picture
+                source(srcset="./img/ico/arrow-ico.webp" type="image/webp")
+                source(srcset="./img/ico/arrow-ico.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img")
+            .quest__quest-text How does a Bitcoin node verify a transaction?
+            .quest__response-text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          .quest__item
+            .quest__btn
+              picture
+                source(srcset="./img/ico/arrow-ico.webp" type="image/webp")
+                source(srcset="./img/ico/arrow-ico.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img")
+            .quest__quest-text How Does Bitcoin Cryptography work?
+            .quest__response-text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
