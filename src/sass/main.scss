@@ -73,7 +73,7 @@ ul{
 }
 
 .tablet{
-  @media (max-width: 992px) {
+  @media (min-width: 992px) {
     display: none;
   }
 }
@@ -140,7 +140,9 @@ input{
   font-size: 18px;
   text-align: center;
   font-weight: 600;
-  margin-bottom: 30px;
+  //margin-bottom: 30px;
+
+  margin-bottom: 12px;
 }
 
 .site-title{
@@ -231,7 +233,8 @@ input{
 }
 
 .top-block{
-  padding-top: 250px;
+  //padding-top: 250px;
+  padding-top: 184px;
   position: relative;
 
   &__bg{
@@ -262,7 +265,8 @@ input{
     color: white;
     font-size: 42px;
     line-height: 56px;
-    margin-bottom: 50px;
+    //margin-bottom: 50px;
+    margin-bottom: 64px;
   }
 
   &__content{
@@ -330,16 +334,21 @@ input{
 
   &__img{
     position: absolute;
-    right: 0;
-    top: 22%;
+    //right: 0;
+    //top: 22%;
+    right: 2%;
+    top: 21%;
   }
 
   &__bottom{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 75px;
+    //margin-top: 50px;
+    //margin-bottom: 75px;
     position: relative;
+
+    margin-top: 95px;
+    margin-bottom: 46px;
   }
 
   &__btn{
@@ -361,8 +370,11 @@ input{
 .project{
   position: relative;
   margin-top: 105px;
-  padding-top: 125px;
-  padding-bottom: 245px;
+  //padding-top: 125px;
+  //padding-bottom: 245px;
+
+  padding-top: 107px;
+  padding-bottom: 177px;
 
   &__bg{
     position: absolute;
@@ -387,7 +399,9 @@ input{
   }
 
   &__title{
-    margin-bottom: 50px;
+    //margin-bottom: 50px;
+
+    margin-bottom: 67px;
   }
 
   &__main{
@@ -421,6 +435,8 @@ input{
 
       .project__item-txt{
         margin-bottom: 20px;
+
+        margin-bottom: 44px;
       }
     }
     &:nth-child(odd){
@@ -497,7 +513,7 @@ input{
 
   &__top{
     border-bottom: 2px solid #4e995a;
-    padding: 30px 15px 20px;
+    padding: 30px 15px 11px;
   }
 
   &__top-img{
@@ -696,10 +712,12 @@ input{
     position: relative;
     z-index: 2;
     padding-top: 140px;
-    padding-bottom: 200px;
+    //padding-bottom: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding-bottom: 170px;
   }
 
   &__title{
@@ -835,6 +853,7 @@ input{
 
   &__inner{
 
+    max-width: 1005px;
   }
 
   &__name{
@@ -901,8 +920,10 @@ input{
 
 
 .hiw{
-  padding-top: 115px;
+  //padding-top: 115px;
   position: relative;
+
+  padding-top: 155px;
 
   &:before{
     content: "";
@@ -1076,6 +1097,8 @@ input{
     color: #298954;
     padding-right: 20px;
 
+    line-height: 1.5;
+
 
     b{
       color: #298954;
@@ -1130,13 +1153,17 @@ input{
     flex-direction: column;
 
     &:last-child{
-      max-width: 620px;
+      //max-width: 620px;
       width: 100%;
+
+      max-width: 665px;
     }
   }
 
   &__logo{
-    margin-bottom: 35px;
+    //margin-bottom: 35px;
+
+    margin-bottom: 26px;
   }
 
   &__logo-i{
@@ -1168,13 +1195,15 @@ input{
   }
 
   &__list-title{
-    margin-bottom: 35px;
+    //margin-bottom: 35px;
     font-size: 18px;
     line-height: 22px;
     font-weight: 800;
     color: white;
     transition: .3s all;
     text-transform: uppercase;
+
+    margin-bottom: 26px;
 
     &:hover{
       color: #edc913;
@@ -1194,7 +1223,7 @@ input{
 
   &__link-ico{
     margin-top: auto;
-    margin-bottom: -15px;
+
 
     &:hover{
       transform: scale(.9) translateY(-2px);
@@ -1202,9 +1231,11 @@ input{
   }
 
   &__bottom{
-    padding-top: 90px;
+    //padding-top: 90px;
     display: flex;
     justify-content: space-between;
+
+    padding-top: 56px;
   }
 
   &__copy{
@@ -1470,6 +1501,15 @@ input{
     line-height: 33px;
     min-width: 116px;
     font-size: 13px;
+  }
+
+  .quest__quest-text {
+    font-size: 16px;
+  }
+
+  .quest__response-text {
+    font-size: 14px;
+    line-height: 24px;
   }
 
 }
