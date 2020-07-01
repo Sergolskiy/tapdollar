@@ -117,35 +117,42 @@ block content
 
 
     .calculator
-      .calculator__inner
+      .calculator__inner.site-container
         .calculator__title.site-title Profit calculator
         .calculator__block
-          .calculator__left
+          .calculator__left.b-lazy(data-blazy="./img/calc-bg-big.webp")
             .calculator__top
+              .calculator__top-img
+                picture
+                  source(srcset="./img/billex.webp" type="image/webp")
+                  source(srcset="./img/billex.png" type="image/png")
+                  img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" height="49" width="46" alt="img")
               .calculator__top-txt Calculated for
                 span 1 USD BILLEX = 1 USA DOLLAR
             .calculator__fields
               .calculator__row
-                label(for="sel").calculator__label
-                select.calculator__select#sel
-                  option Automatic
-                  option Custom
+                label(for="sel").calculator__label Choose investment plan
+                .calculator__select-wrap
+                  select.calculator__select#sel
+                    option Automatic
+                    option Custom
               .calculator__row
-                label(for="inp1").calculator__label
+                label(for="inp1").calculator__label Choose a sum
                 input(type="text" id="inp1" value="1000").calculator__input
               .calculator__row
-                label(for="sel2").calculator__label
-                select.calculator__select#sel2
-                  option Level 1
-                  option Level 2
+                label(for="sel2").calculator__label Choose referral system level
+                .calculator__select-wrap
+                  select.calculator__select#sel2
+                    option Level 1
+                    option Level 2
 
           .calculator__right
             .calculator__profit-name USD BILLEX
             .calculator__profit-double
-              .calculator__profit-double-i
+              .calculator__profit-double-i.b-lazy(data-blazy="./img/calc-bg-min.webp")
                 | PROFIT PERCENT PER DAY
                 span 1%
-              .calculator__profit-double-i
+              .calculator__profit-double-i.b-lazy(data-blazy="./img/calc-bg-min.webp")
                 | REFERRAL SYSTEM BONUS
                 span 150 USD
             .calculator__profit-row Profit per day

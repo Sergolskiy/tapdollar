@@ -43,6 +43,10 @@ $(document).ready(function () {
     }
   });
 
+  var bLazy = new Blazy({
+    src: 'data-blazy' // Default is data-src
+  });
+
 
 });
 
