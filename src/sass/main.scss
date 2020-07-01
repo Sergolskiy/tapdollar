@@ -360,6 +360,9 @@ input{
 
 .project{
   position: relative;
+  margin-top: 105px;
+  padding-top: 125px;
+  padding-bottom: 245px;
 
   &__bg{
     position: absolute;
@@ -372,7 +375,7 @@ input{
       display: flex;
     }
     img{
-      object-fit: cover;
+      object-fit: fill;
       object-position: center;
       width: 100%;
     }
@@ -454,7 +457,9 @@ input{
   }
 
   &__bottom{
-
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
   }
 
   &__btn{
@@ -487,6 +492,7 @@ input{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background: #148256;
   }
 
   &__top{
@@ -632,6 +638,7 @@ input{
     font-size: 14px;
     color: white;
     line-height: 24px;
+    background: #148256;
 
     span{
       color: white;
@@ -1226,6 +1233,12 @@ input{
 }
 
 
+@media (max-width: 1450px) {
+  .project__bg img {
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 992px) {
   .header__mobile-menu{
     display: block;
@@ -1358,6 +1371,36 @@ input{
     object-fit: cover;
   }
 
+  .project__list {
+    min-width: 870px;
+  }
+
+  .project__main{
+    transform: scale(0.6);
+  }
+
+  .project__title {
+    margin-bottom: 20px;
+  }
+
+  .project__bottom {
+    margin-top: 30px;
+  }
+
+  .project__bg picture{
+    height: 100%;
+
+    img{
+      height: 100%;
+    }
+  }
+
+  .project {
+    margin-top: 35px;
+    padding-top: 75px;
+    padding-bottom: 155px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -1474,6 +1517,44 @@ input{
     margin-top: -50px;
   }
 
+  .project__list {
+    min-width: 100%;
+    flex-direction: column;
+    background: none !important;
+    align-items: center;
+  }
+
+  .project__main {
+    transform: scale(1);
+  }
+
+  .project__item:nth-child(even){
+    flex-direction: column;
+  }
+
+  .project__item:nth-child(even),
+  .project__item:nth-child(odd){
+    transform: translateY(0);
+  }
+
+  .project__item:nth-child(odd) .project__item-txt {
+    margin-top: 0;
+  }
+
+  .project__item:nth-child(even) .project__item-txt {
+    margin-bottom: 0;
+  }
+
+  .project__item-ico img{
+    width: 100px;
+    height: auto;
+  }
+
+  .project {
+    padding-bottom: 247px;
+    margin-bottom: -100px;
+  }
+
 }
 
 @media (max-width: 450px) {
@@ -1509,5 +1590,9 @@ input{
 
   .footer__link-ico img {
     width: 80px;
+  }
+
+  .header__login-btn{
+    min-width: 90px;
   }
 }
