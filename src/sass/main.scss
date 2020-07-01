@@ -245,7 +245,7 @@ input{
       display: flex;
     }
     img{
-      object-fit: cover;
+      object-fit: fill;
       object-position: center;
       width: 100%;
     }
@@ -643,7 +643,7 @@ input{
       display: flex;
     }
     img{
-      object-fit: cover;
+      object-fit: fill;
       object-position: center;
       width: 100%;
     }
@@ -1316,6 +1316,10 @@ input{
     img{
       height: 100%;
     }
+  }
+
+  .present__bg img{
+    object-fit: cover;
   }
 
 }
