@@ -48,6 +48,11 @@ $(document).ready(function () {
   });
 
 
+  $('.header__mobile-menu').click(function () {
+    $('.header__menu').toggleClass('open');
+    $(this).toggleClass('active');
+  });
+
 });
 
 
