@@ -778,6 +778,196 @@ input{
 
 }
 
+
+.hiw{
+  padding-top: 115px;
+  position: relative;
+
+  &:before{
+    content: "";
+    display: block;
+    width: 400px;
+    height: 1170px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/mid-bg.svg") left top no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+  }
+
+  &:after{
+    content: "";
+    display: block;
+    width: 300px;
+    height: 1250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../img/mid-bg-r.svg") left top no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+  }
+
+  &__inner{
+
+  }
+
+  &__name{
+
+  }
+
+  &__title{
+
+  }
+
+  &__img{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    img{
+      box-shadow: 0 0 15px #03745c;
+    }
+  }
+
+  &__items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 920px;
+    margin: 0 auto;
+
+  }
+
+  &__item{
+    width: 275px;
+    height: 92px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+
+    &.one{
+      background: url("../img/pl-1.png") center center no-repeat;
+
+      &:after{
+        position: absolute;
+        content: "";
+        display: block;
+        height: 1px;
+        width: 45px;
+        right: -45px;
+        top: 50%;
+        background: #f9e277;
+      }
+    }
+
+    &.two{
+      background: url("../img/pl-2.png") center center no-repeat;
+      margin: 0 45px;
+
+      &:after{
+        position: absolute;
+        content: "";
+        display: block;
+        height: 1px;
+        width: 45px;
+        right: -45px;
+        top: 50%;
+        background: #f9e277;
+      }
+    }
+
+    &.three{
+      background: url("../img/pl-3.png") center center no-repeat;
+    }
+
+    &.four{
+      background: url("../img/pl-4.png") center center no-repeat;
+      margin-right: 45px;
+
+      &:before{
+        position: absolute;
+        content: "";
+        display: block;
+        height: 1px;
+        width: 132px;
+        left: -100px;
+        top: -30px;
+        transform: rotate(45deg);
+        background: #f9e277;
+      }
+
+      &:after{
+        position: absolute;
+        content: "";
+        display: block;
+        height: 1px;
+        width: 132px;
+        right: 80px;
+        top: -40px;
+        transform: rotate(-45deg);
+        background: #f9e277;
+      }
+    }
+
+    &.five{
+      background: url("../img/pl-5.png") center center no-repeat;
+
+      &:before{
+        position: absolute;
+        content: "";
+        display: block;
+        height: 1px;
+        width: 132px;
+        left: -100px;
+        top: -30px;
+        transform: rotate(45deg);
+        background: #f9e277;
+      }
+
+      &:after{
+        position: absolute;
+        content: "";
+        display: block;
+        height: 1px;
+        width: 132px;
+        right: 80px;
+        top: -40px;
+        transform: rotate(-45deg);
+        background: #f9e277;
+      }
+    }
+  }
+
+  &__num{
+
+  }
+
+  &__txt{
+    width: 100%;
+    padding-left: 80px;
+    font-weight: 600;
+    color: #298954;
+    padding-right: 20px;
+
+
+    b{
+      color: #298954;
+    }
+  }
+
+  &__bottom{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+}
+
+
 .footer{
   position: relative;
 
