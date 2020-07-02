@@ -1268,6 +1268,11 @@ input{
   .project__bg img {
     object-fit: cover;
   }
+
+  .header__menu-link{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1474,6 +1479,10 @@ input{
       width: 100px;
       height: auto;
     }
+  }
+
+  .calculator__left{
+    flex: auto;
   }
 
   .calculator__right{
